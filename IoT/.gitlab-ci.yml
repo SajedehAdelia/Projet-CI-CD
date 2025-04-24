@@ -1,0 +1,17 @@
+stages:
+  - lint
+  - test
+
+lint:
+  image: node:18
+  stage: lint
+  script:
+    - npm install
+    - npx eslint .
+
+test:
+  image: node:18
+  stage: test
+  script:
+    - npm install
+    - npm test
