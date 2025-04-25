@@ -18,8 +18,10 @@ jobs:
         with:
           node-version: '18'
 
-      - name: Install dependencies
-        run: npm install
+      - name: Change directory into EnvCast
+        run: cd EnvCast && npm install
+        working-directory: ./EnvCast
 
       - name: Run tests
         run: npm test
+        working-directory: ./EnvCast
