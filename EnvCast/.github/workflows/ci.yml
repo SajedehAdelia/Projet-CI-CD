@@ -2,9 +2,9 @@ name: CI
 
 on:
   push:
-    branches: [ main ]
+    branches: [ feat/2/envcast ]
   pull_request:
-    branches: [ main ]
+    branches: [ feat/2/envcast ]
 
 jobs:
   build:
