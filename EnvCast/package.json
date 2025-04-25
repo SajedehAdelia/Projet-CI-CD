@@ -4,26 +4,40 @@
     "description": "IoT sensor simulator and sender with full CI/CD",
     "main": "index.js",
     "scripts": {
-        "test": "echo \"No tests yet\" && exit 0"
+      "test": "echo \"No tests yet\" && exit 0"
     },
     "author": "Louis XIV",
     "license": "ISC",
     "dependencies": {
-        "axios": "^1.6.0"
+      "axios": "^1.6.0"
     },
     "devDependencies": {
-        "release-it": "^19.0.1",
-        "standard-version": "^9.5.0"
+      "@semantic-release/changelog": "^6.0.3",
+      "@semantic-release/git": "^10.0.1",
+      "@semantic-release/github": "^11.0.1",
+      "release-it": "^19.0.1",
+      "semantic-release": "^24.2.3",
+      "standard-version": "^9.5.0"
     },
     "release-it": {
-        "git": {
-            "tagName": "v${version}",
-            "commitMessage": "chore(release): v${version}"
-        },
-        "npm": false,
-        "github": {
-            "release": true
-        }
+      "git": {
+        "tagName": "v${version}",
+        "commitMessage": "chore(release): v${version}"
+      },
+      "npm": false,
+      "github": {
+        "release": true
+      }
+    },
+    "release": {
+      "branches": ["main"],
+      "plugins": [
+        "@semantic-release/commit-analyzer",
+        "@semantic-release/release-notes-generator",
+        "@semantic-release/changelog",
+        "@semantic-release/git",
+        "@semantic-release/github"
+      ]
     }
-
-}
+  }
+  
