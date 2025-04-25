@@ -5,12 +5,15 @@
     "description": "IoT sensor simulator and sender with full CI/CD",
     "main": "index.js",
     "scripts": {
+
       "test": "echo \"No tests yet\" && exit 0",
       "release": "./release.sh release-it"
+
     },
     "author": "Louis XIV",
     "license": "ISC",
     "dependencies": {
+
       "axios": "^1.6.0"
     },
     "devDependencies": {
@@ -33,3 +36,4 @@
     }
   }
   
+
