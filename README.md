@@ -6,7 +6,7 @@ The `EnvCast` project is an IoT sensor simulator and sender application with aut
 
 ## Branches and Tags
 
-- **`feat/2/envcast`**: This branch contains the development work for the features and tools related to the `EnvCast` project. It has an associated tag (`feat/2/envcast`) that can be used to mark the specific release.
+- **`feat/2/envcast`**: This branch contains the development work for the features and tools related to the `EnvCast` project. It has an associated tag (`feat/2-envcast-stable-release`) that can be used to mark the specific release.
 - **`main`**: The `main` branch represents the stable, production-ready version of the project. It is different from `feat/2/envcast` as it doesn't include the specific developments and tools used for versioning, changelog generation, and CI/CD integration.
 
 You can see the tag `feat/2/envcast` in the `feat/2/envcast` branch to mark the completion of the associated features and improvements in that branch.
