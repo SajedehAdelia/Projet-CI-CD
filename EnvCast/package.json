@@ -1,10 +1,12 @@
 {
     "name": "envcast",
     "version": "1.0.0",
+    "private": true,
     "description": "IoT sensor simulator and sender with full CI/CD",
     "main": "index.js",
     "scripts": {
-      "test": "echo \"No tests yet\" && exit 0"
+      "test": "echo \"No tests yet\" && exit 0",
+      "release": "./release.sh release-it"
     },
     "author": "Louis XIV",
     "license": "ISC",
@@ -28,16 +30,6 @@
       "github": {
         "release": true
       }
-    },
-    "release": {
-      "branches": ["main"],
-      "plugins": [
-        "@semantic-release/commit-analyzer",
-        "@semantic-release/release-notes-generator",
-        "@semantic-release/changelog",
-        "@semantic-release/git",
-        "@semantic-release/github"
-      ]
     }
   }
   
