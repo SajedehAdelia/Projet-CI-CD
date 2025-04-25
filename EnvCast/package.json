@@ -5,8 +5,10 @@
     "description": "IoT sensor simulator and sender with full CI/CD",
     "main": "index.js",
     "scripts": {
+
         "test": "jest",
         "release": "./release.sh release-it"
+
     },
     "author": "Louis XIV",
     "license": "ISC",
@@ -33,3 +35,4 @@
         }
     }
 }
+
